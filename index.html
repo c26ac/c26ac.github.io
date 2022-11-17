@@ -2,34 +2,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	
 	<style type="text/css">
-
 		#container{
 			position: relative;
 		}
 		
 		#menu{
-			font-family: 'Fraunces', serif;
-			font-size: 40px;
+			font-family: 'Reenie Beanie', hand;
+			font-size: 85px;
 			color: rgb(254,251,234);
-			text-decoration: underline;
 		}
 
 		#menucontents{
-			font-family: 'Fraunces', serif;
-			font-size: 20px;
+			font-family: 'Helvetica 55 Roman', sans-serif;			
+			font-size: 23px;
 			color: rgb(254,251,234);
+			position: relative;
 			z-index: 5;
 		}
 
 		#menurectangle{
 			top:0%;
 			z-index: 1;
-			width: 510px;
-			height: 160px;
+			width: 630px;
+			height: 100px;
 			position: relative;
 			background-color: #decdb9;
 		}
@@ -82,6 +83,26 @@
 			background-image:  url(./imgs/brownie.png);
 		}
 
+		#strawberry_shortcake{
+			background-image: url(./imgs/strawberryshortcake.png);
+		}
+
+		#waffles{
+			background-image: url(./imgs/waffles.png);
+		}
+
+		#raspberrycake{
+			background-image: url(./imgs/raspberrycake.png);
+		}
+
+		#chocolatecupcake{
+			background-image: url(./imgs/chocolatecupcake.png)
+		}
+
+		#creampuff{
+			background-image: url(./imgs/creampuff.png);
+		}
+
 		#display{
 			background-color:blue;
 			width: 700px;
@@ -94,18 +115,18 @@
 <body>
 	
 
-
-
-
 <center>
 <!-- BRICK WALL BACKGROUND -->
 <div id="brickwall">
 
-<!-- MENU RECTANGLE BACKGROUND -->
-<div id="menurectangle"> 
 
 <!-- HEADER FOR MENU / WEBSITE OVERALL -->
 <p id="menu"> Angelina's Bakery </p>
+
+
+<!-- MENU RECTANGLE BACKGROUND -->
+<div id="menurectangle"> 
+
 
 <!-- MENU LINKS / CONTENTS -->
 <p id="menucontents"><a href="projects.html">Projects</a> ------------ $1.00 <span>*</span><a href="aboutme.html">                                               About me ------------ $3.00          
@@ -114,7 +135,7 @@
 
 </div> <!-- end of menurectangle -->
 
-<br><br><br><br><br>
+<br><br>
 
 <!-- DESSERT DISPLAY CASE -->
 <div id=display>
@@ -124,16 +145,15 @@
 	<div id="rollcake" class="item"></div>
 	<div id="cheesecake" class="item"></div>
 	<div id="brownie" class="item"></div>
-	<div class="item"></div>
-
+	<div id="strawberry_shortcake" class="item"></div>
+	
 	<br>
-	<br> 
-	<br>
+	
 
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
+	<div id="waffles" class="item"></div>
+	<div id="raspberrycake" class="item"></div>
+	<div id="chocolatecupcake" class="item"></div>
+	<div id="creampuff" class="item"></div>
 	<div class="item"></div>
 </div>
 
