@@ -70,8 +70,8 @@
 
 <p id="quote"> <b> TURN THAT FROWN UPSIDE DOWN (click)! </b></p>
 <center><div id="face"></div></center>
-<center><div id="otherface"></div></center>
-<center><p id="quote2"> Hope you have a great day! :D</p></center>
+<!-- <center><div id="otherface"></div></center>
+ --><center><p id="quote2"> Hope you have a great day! :D</p></center>
 
 	<script type="text/javascript">
 
@@ -79,11 +79,12 @@
 			
 		var face = document.getElementById("face");
 		face.addEventListener ("click", function(){
-			console.log("hi World")
-			otherface.style.opacity = "100"
-				;
-			face.style.opacity = "0"
-				;
+			console.log("hi World");
+			face.style.transform = "rotate(180deg)";
+			// otherface.style.opacity = "100"
+			// 	;
+			// face.style.opacity = "0"
+			// 	;
 			quote2.style.opacity = "100"
 
 		})
