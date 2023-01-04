@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 	<style type="text/css">
-	div {
-  	width: 100%;
-  	height: 1000px;
- 	position: relative;
-  	animation-name: animation1;
-  	background-size: contain;
-  	animation-duration: 30s;
+
+	#hello{
+	  	width: 90%;
+	  	height: 500px;
+	  	animation-name: animation1;
+	  	background-size: contain;
+	  	animation-duration: 30s;
 	}
+	#header{
+			font-family: 'Reenie Beanie', hand;
+			font-size: 95px;
+			color: rgb(86, 61, 51);
+		}
 
 	@keyframes animation1{
 		0% 	{background-image:url(./imgs/roll.png);}
@@ -31,8 +40,9 @@
 	</style>
 </head>
 <body>
+	<center><p id="header"><b>My First Animation</b></p></center>
+<center><div id="hello"></div></center>
 
-<h1>Animation 1!</h1>
 
 <div></div>
 </body>

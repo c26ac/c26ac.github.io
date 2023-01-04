@@ -23,9 +23,19 @@
 
 		#header{
 			font-family:'Reenie Beanie', hand;
-			font-size: 85px;
+			font-size: 95px;
 			position:  relative;
 			color: rgb(86, 61, 51);
+		}
+
+		#background{
+			width: 100%;
+			height: 1000px;
+			position: absolute;
+			background-image: url(./imgs/background.png);
+			background-size: contain;
+			z-index: -10;
+			background-repeat: no-repeat;
 		}
 
 		#entry1{
@@ -76,6 +86,14 @@
 			z-index: 5;
 		}
 
+		#entry6{
+			font-family: 'Helvetica 65 Medium', sans-serif;			
+			font-size: 20px;
+			color: rgb(86, 61, 51);
+			position: relative;
+			z-index: 5;
+		}
+
 
 
 
@@ -84,29 +102,34 @@
 	<title></title>
 </head>
 <body>
-
-<p id="header"> - Journal - </p>
+<center>
+<p id="header"> <b> Journal </b></p></center>
 	
-<p id= "entry1" > Journal Entry 1 — September 23rd, 2022
+<p id= "entry1" > <b><span> Journal Entry 1 — September 23rd, 2022 </span></b>
 	<br> <br> In computer science 1 this week, I learned about what it meant for something to be 'meta'. It was pretty cool because it turned out to apply to Computer Science, as well as our History class that day! It's good to know it means more than just the Instagram/Facebook company...Also, its not the easiest, but it's comforting to know that coding a website is not as scary as it seems! </p>
 
-<p id= "entry2" >Journal Entry 2 — September 30th, 2022
+<p id= "entry2" > <b> Journal Entry 2 — September 30th, 2022 </b>
 	<br> <br> I just coded my person card. I made a transition with two different paintings of cakes. Even though there are directions, I still kept on making small mistakes. However, it was very satisfying to see it come together in the end. Coding with html is very different from python; it's been a switch from last year's currriculum. I'm excited to learn more about it though!! </p>
 
-<p id= "entry3" >Journal Entry 3 — September 31st, 2022
+<p id= "entry3" > <b> Journal Entry 3 — September 31st, 2022</b>
 	<br> <br> I am beginning to code my website! It's definitely confusing, but I think I'm getting somewhere. I am just starting to get a grasp on how the user interface works and how to categorize different pieces of code throughout the head, body, etc. The cheet sheets and videos have been lifesavers!! </p> 
 
-<p id= "entry4" > Journal Entry 4 — October 17th, 2022
+<p id= "entry4" > <b>Journal Entry 4 — October 17th, 2022 </b>
 	<br> <br> I just made my first ever project and animation in CSS! I made an animation that would flip through all of the desserts in my "bakery." I think my code works the way it does because in my first div in the style section, I specify how big I want my animation to appear, and I said that I want it to fill up the whole screen which would explain its size. In that div I also specified that I want it to last for 30 seconds, which explains its duration. Then, most importantly, I wanted it to include 10 different frames so I divided 100% by 10 to get 10% intervals. So, I typed in each of these intervals along with the ten photos I wanted, which told the system that I wanted those photos to appear at those times, allowing my animation to function! </p>
 
-<p id="entry5" >Journal Entry 5 — November 16th, 2022
-	<br> <br> I finally finished my gift assignment! Even though the finished product is very simple, this took longer to create than I expected. I made it by creating two divs - one for a sad face and another for a happy face. I also made variables in javascript for each of these faces. I started with the sad face at a normal opacity (100) and the happy face at an opacity of 0 so you wouldn't see it. However, in my div, to "turn the frown upside down" I made it so that when you clicked the sad face it would turn its opacity to 0 and instead bring the happy face'opacity to 100 so you only see the happy face now instead of the sad one. I used this same technique on a little note to go aliong with it. It was okay to make overall but figuring out how eventListeners work was very frustrating, especially because I kept on making small, careless errors in my code. I didn't exactly make this for anyone in particular, but perhaps it can serve as a gift for anyone who is having a bad day hahaha
+<p id="entry5" > <b> Journal Entry 5 — November 16th, 2022</b>
+	<br> <br> I finally finished my gift assignment! Even though the finished product is very simple, this took longer to create than I expected. I made it by creating two divs - one for a sad face and another for a happy face. I also made variables in javascript for each of these faces. I started with the sad face at a normal opacity (100) and the happy face at an opacity of 0 so you wouldn't see it. However, in my div, to "turn the frown upside down" I made it so that when you clicked the sad face it would turn its opacity to 0 and instead bring the happy face'opacity to 100 so you only see the happy face now instead of the sad one. I used this same technique on a little note to go aliong with it. It was okay to make overall but figuring out how eventListeners work was very frustrating, especially because I kept on making small, careless errors in my code. I didn't exactly make this for anyone in particular, but perhaps it can serve as a gift for anyone who is having a bad day hahaha </p>
+
+<p id="entry6" > <b> Journal Entry 6 — December 1st, 2022 </b>
+	<br> <br> Although I have yet to finished my rendition of the square quilt, I can explain how the base quilt works. A singular square is first created in the function makeSquare in javascipt. Then, a for loop allows you to run this function as many times as you want, allowing you to replicate the square as many times as you want. When specifying how many times I wanted to repeat the function/create the square, you need to specify what i, which is a variable we are putting in along with the function when running it and that will specify that it is a while loop. I made i = 0 and i < 6, which means that there will be the as many squares as possible considering that they are 0 and above but less than 6. When including 0, these values would be 0, 1, 2, 3, 4, 5, but not 6, although there still are 6 squares that will be created. In order to run this along with the specifications we just made, we run it with [i] after it! 
+
+
+<p id="entry6" > <b> Journal Entry 7 — January 4th, 2023 </b>
+	<br> <br> I finished my array generator! It generates a random color combonation when you click on the squares. I coded it by first making a box that will contain the array. Then, I made the array of squares in javascript by making a function called makeSquare which would make one of the squares. In this function I set the color and size of each square, and then specificed that I wanted to run this function 6 times, therefore creating 6 squares. In the function I also said that I wanted the squares to be displayed with inline-block which ensures that they will be in an array. Then, I created a list of 22 colors called "colors1". These are the colors that may come up when you press each square. Next, I added an eventListener for when you click on each square, which will cause the function to run and then choose a random number using the Math.random function out of 22, make it an index, and apply that to "colors1" to choose the color that has that index in the list. Then, I made it so that the background color of the square would change to this randomly selected color. 
 
 
 
 
-<div></div>
-
-
+</center>
 </body>
 </html>
