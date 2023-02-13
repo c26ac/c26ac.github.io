@@ -27,9 +27,22 @@
 			font-size: 40px;
 			color: rgb(86, 61, 51);
 			position: relative;
+
+		}
+		#background{
+			width: 90%;
+			padding-left: 10%;
+			padding-top: 17%;
+			height: 1000px;
+			position: absolute;
+			background-image: url(./imgs/background.png);
+			background-size: contain;
+			z-index: -10;
+			background-repeat: no-repeat;
+			top: 0px;
 		}
 
-		brickwall{
+		/*#brickwall{
 					width: 90%;
 					height: 1000px;
 					position: absolute;
@@ -37,16 +50,34 @@
 					z-index: -10;
 					padding-left: 10%;
 				}
-
+*/
 				body{
 					margin: 0px;
 				}
 
+
+		#home{
+			width: 20%;
+			padding-left: 10%;
+			padding-top: 17%;
+			height: 20%;
+			background-image: url(./home.png);
+			background-size: contain;
+			z-index: -9;
+			background-repeat: no-repeat;
+			top: 0px;
+		}
+
+
+
+
 	</style>
 </head>
 <body>
-<div>
-<center><b> <p id="header">Projects</p></center></b>
+<div><center><b> <p id="header">Projects</p></center></b>
+<div id="home"></div>
+<div id="background">
+
 
 	
 
@@ -58,10 +89,7 @@
 
 
 
-
 </div>
 
-
-</div>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#pic{
+			width: 900px;
+			height: 900px;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<center><img id="pic" src="7.jpg"></img></center>
+
+	<script type="text/javascript">
+
+		pic.addEventListener("mousemove", function(event){
+
+			pic.style.filter = "hue-rotate("+event.clientX+"deg)"
+		});
+
+		//we are adding an event listener on line 18 and saying that when we hover on the picture, a certain thing will happen. on 20 we specify that what wil happen is that a filter will be applied to the picture which is rotating the hue. We clarify that there is  
+	</script>
+	</body>
+
+
+</html>

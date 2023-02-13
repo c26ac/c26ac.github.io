@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        #header{
+                font-family:'Reenie Beanie', hand;
+                font-size: 95px;
+                position:  relative;
+                color: rgb(86, 61, 51);
+            }
+
+        #description{
+            font-family: 'Helvetica 55 Roman', sans-serif;          
+            font-size: 23px;
+            color: #563D33;
+        }
+
+        #box{
+            width: 550px;
+            height: 450px;
+            border:  2px solid #563D33;
+        }
+
+</style>
+</head>
+<body>
+<center>
+    <p id="header"><b> Colored Square Array Generator </b></p>
+
+    <p id="description"><b> Click on each square to generator a different color. After clicking on each square, you will have a personalized color combonation! </b></p>
+
+    <div id="box"></div>
+
+
+</center>
+
+    <script type="text/javascript">
+                var colors1 = ["🍞", "😡", "🏠", 
+                "⌛️", "🌊", "🛣️", "🗣️", "⚔️", "🏙️", "#b2ccc0"]
+
+                var terms = ["panis, panis, m.", "ira, ae, f.", "domus, domus, f.", 
+                "hora, ae, f.", "aqua, ae, f.", "via, ae f.", "vox, vocis, f.", "gladius, gladii, m.", "urbs, urbis", "#b2ccc0"]
+
+           function makeSquare (x) {
+                var square = document.createElement('div');
+                var box = document.getElementById('box')
+                box.appendChild(square)
+                            //document.body.appendChild(square);
+                square.style.width = "400px";
+                square.style.height = "200px";
+                square.style.display = "inline-block";
+                square.style.margin = "10px";
+                square.style.backgroundRepeat = "no-repeat";
+                square.style.backgroundColor = "#563D33"
+                square.style.backgroundSize = "contain";
+                square.style.backgroundImage = "url('./" + x + ".png')" 
+                //square.style.id = "square" + x;
+                square.setAttribute("id", "square" + x)
+                square.setAttribute("class", "square")
+
+                square.addEventListener("click", function(){
+                var angelina = Math.round(Math.random()*22);
+
+                square.style.backgroundColor = colors1[angelina]
+               //  if (square.id == "square0")
+            //             square.style.backgroundColor = colors1[angelina]
+
+            // if (square.id == "square1") 
+            //             square.style.backgroundColor = "pink"
+
+
+            // if (square.id == "square2") 
+            //             square.style.backgroundColor = "orange"
+
+
+            // if (square.id == "square3") 
+            //             square.style.backgroundColor = "magenta"
+
+
+            // if (square.id == "square4") 
+            //             square.style.backgroundColor = "blue"
+
+
+            // if (square.id == "square5") 
+            //             square.style.backgroundColor = "green"
+
+
+            // if (square.id == "square6") 
+            //             square.style.backgroundColor = "yellow"
+
+                })
+
+            };
+
+
+
+
+     for (var i = 0; i < 2; i=i+1) 
+     { makeSquare(i);}
+
+
+        // var seasons = ["summer", "winter", "spring", "fall"]
+        // var arrays = 
+
+
+        // box.addEventListener("click", function(){
+
+
+        //  var angelina = Math.round(Math.random()*5);
+
+        //  // box.innerText = seasons[angelina]
+
+        //      // for (var i = 0; i < 6; i=i+1) 
+        //      // { makeSquare(i);}
+        //     var square = document.getElementByClassName('square')
+        //     //var square = document.getElementById('square1')
+        //  //var square = document.getElementById('square2')
+        //  //var square = document.getElementById('square3')
+        //  //var square = document.getElementById('square4')
+        //  //var square = document.getElementById('square5')
+            
+        //  for (var i = 0; i < 6; i=i+1) 
+        //      {square[i].style.backgroundColor="purple"}
+
+        //  if (square.id == "square0")
+  //                       square.style.backgroundColor = "red"
+
+  //           if (square.id == "square1") 
+  //                       square.style.backgroundColor = "pink"
+
+
+  //           if (square.id == "square2") 
+  //                       square.style.backgroundColor = "orange"
+
+
+  //           if (square.id == "square3") 
+  //                       square.style.backgroundColor = "magenta"
+
+
+  //           if (square.id == "square4") 
+  //                       square.style.backgroundColor = "blue"
+
+
+  //           if (square.id == "square5") 
+  //                       square.style.backgroundColor = "green"
+
+
+  //           if (square.id == "square6") 
+  //                       square.style.backgroundColor = "yellow"
+
+        // })
+
+
+</script>
+</body>x
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+	#box1{
+		width: 300px;
+		height: 200px;
+		background-color:  lightblue;
+	}
+	#box2{
+		width: 300px;
+		height: 200px;
+		background-color:  lightgreen;
+
+	} 
+	#header{
+				font-family:'Reenie Beanie', hand;
+				font-size: 95px;
+				position:  relative;
+				color: rgb(86, 61, 51);
+				padding-top: 3%;
+			}
+
+		#description{
+            font-family: 'Helvetica 55 Roman', sans-serif;          
+            font-size: 23px;
+            color: #563D33;
+        }
+
+	</style>
+	
+</head>
+<body>
+
+<center>
+<b><div id="header">Latin Vocab Flashcards</div></b>
+<b><div id="description">I made some English to Latin flashcards to help study for quizzes. Click the top box to get an English word and 6 seconds later, the Latin translation will show up in the second box. </div></b>
+</center>
+
+<center>
+<div id="box1"></div>
+<div id="box2"></div>
+</center>
+
+<script type="text/javascript">
+
+	var english = ["thing, affair, matter, situation", "all, every", "opinion", "cruel", "heart, breast", "above, upper", "citizenship, state", ]
+	var latin = ["res, rei, f.", "omnis, omne", "opinio, opinionis, f.", "saevus, -a, -um", "pectus, pectoris, n.", "superus, -a, -um", "civitas, civitatis, F.",  ]
+
+	document.addEventListener("click", function(){
+		var number = Math.round(Math.random()*6);
+
+	box1.innerText = english[number]
+
+function box2text (){
+	box2.innerText = latin[number]
+}
+
+setTimeout(box2text, 3000)
+	})
+
+	</script>
+</body>
+</html>
