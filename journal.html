@@ -7,6 +7,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 	<style type="text/css">
+		#home{
+			width: 30%;
+			padding-left: 10%;
+			padding-top: 10%;
+			height: 30%;
+			background-image: url(./home.png);
+			background-size: contain;
+			z-index: -9;
+			background-repeat: no-repeat;
+			top: 0px;
+		}
+
 		div {
 			width: 90px;
 			height: 90px;
@@ -93,6 +105,16 @@
 			position: relative;
 			z-index: 5;
 		}
+		#entry7{
+			font-family: 'Helvetica 65 Medium', sans-serif;			
+			font-size: 20px;
+			color: rgb(86, 61, 51);
+			position: relative;
+			z-index: 5;
+		}
+		 body{
+            margin: 10%;
+        }
 
 
 
@@ -128,8 +150,10 @@
 	<br> <br> I finished my array generator! It generates a random color combonation when you click on the squares. I coded it by first making a box that will contain the array. Then, I made the array of squares in javascript by making a function called makeSquare which would make one of the squares. In this function I set the color and size of each square, and then specificed that I wanted to run this function 6 times, therefore creating 6 squares. In the function I also said that I wanted the squares to be displayed with inline-block which ensures that they will be in an array. Then, I created a list of 22 colors called "colors1". These are the colors that may come up when you press each square. Next, I added an eventListener for when you click on each square, which will cause the function to run and then choose a random number using the Math.random function out of 22, make it an index, and apply that to "colors1" to choose the color that has that index in the list. Then, I made it so that the background color of the square would change to this randomly selected color. 
 
 
-
+<p id="entry6" > <b> Journal Entry 8 — February 14th, 2023 </b>
+	<br> <br> Happy Valentine's Day! I just created a valentine's day card - it's not really for anyone in particular, but I feel like anyone can enjoy it. I put in a red velvet cake recipe with a chance to blow the candle on the cake out at the end. I first just messed around with different font stylings incluidng size, margins, lines between paragraphs, bullet points, and italicizing / bolding important terms. Then, to blow out the candle on the cake, I had two photos: one with a cake with a candle, and on the other I photoshopped the flame out of the candle. Then, I created an event listener which said that when you click on the cake with the candle, it would change the background image to the cake without the candle, simulating blowing it out. 
 
 </center>
+<div id="home"></div>
 </body>
 </html>
