@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#header{
+			font-family: 'Reenie Beanie', hand;
+			font-size: 85px;
+			color: rgb(86, 61, 51);}
+
+		 #description{
+            font-family: 'Helvetica 55 Roman', sans-serif;          
+            font-size: 23px;
+            color: rgb(86, 61, 51);
+        }
+
+		#buggy{
+			width: 50px;
+			height: 50px;
+			position: relative;
+			background-size: contain;
+			background-color: rgb(86, 61, 51);
+		}
+		#background{
+			width: 90%;
+			height: 1000px;
+			position: absolute;
+			background-image: url(maze.png);
+			background-size: contain;
+			z-index: -10;
+			background-repeat: no-repeat;
+			top: 0px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="background"></div>
+
+<div id="buggy"></div>
+
+	<script type="text/javascript">
+
+	buggy.style.left = "0px";
+	var x = parseInt(buggy.style.left);
+
+
+	document.addEventListener("keydown", 
+		function(event){
+		console.log(event.keyCode)
+
+	if(event.keyCode == 39) {
+	x=x+10;
+	buggy.style.left= x + "px";
+
+
+	}
+	else if (event.keyCode == 37) {
+		x=x-10
+		buggy.style.left = x + "px";
+	}
+
+
+
+})
+
+
+	document.addEventListener("keydown", 
+		function(event){
+		console.log(event.keyCode)
+
+	if(event.keyCode == 40) {
+	x=x+10;
+	buggy.style.top = x + "px";
+
+
+	}
+	else if (event.keyCode == 38) {
+		x=x-10
+		buggy.style.top = x + "px";
+	}
+
+	
+
+})
+
+
+
+</script>
+</body>
+
+</html>
+
+
