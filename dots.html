@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#circle{
+			width: 100px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 100px;
+			background-color: blue;
+			position:  absolute;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="circle"></div>
+	<script type="text/javascript">
+
+	document.addEventListener(
+		"mousemove",
+		function(event) {
+		circle.style.top = event.clientY +"px"	
+		circle.style.left = event.clientX + "px"
+	})
+	
+	</script>
+
+
+
+</body>
+</html>

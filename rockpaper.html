@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+		#header{
+				font-family:'Reenie Beanie', hand;
+				font-size: 95px;
+				position:  relative;
+				color: rgb(86, 61, 51);
+			}
+
+		#description{
+            font-family: 'Helvetica 55 Roman', sans-serif;          
+            font-size: 23px;
+            color: #563D33;
+        }
+
+		#box{
+			width: 300px;
+			height: 150px;
+			border:  2px solid #563D33;
+		}
+		.scorebox{
+			width: 300px;
+			height: 50px;
+			border:  2px solid #563D33;
+		}
+
+</style>
+</head>
+<body>
+<center>
+	<p id="header"><b> Rock Paper Scissors Game </b></p>
+
+	<p id="description"><b> With one player per square, click to randomly choose rock, paper, or scissors. Your score will appear above. Have fun! 
+	<div id="score1" class="scorebox">player 1 score is</div>
+	<div id="score2"class="scorebox">player 2 score is</div>
+
+	<div id="box"> </div>
+	<div id="box2">  </div>
+
+
+
+</center>
+
+	<script type="text/javascript">
+
+		//*var choice1;
+
+	            var rps = ["paper.png", "rock.png", "scissors.png"]
+
+		   function makeSquare (x) {
+	            var square = document.createElement('div');
+	            var box = document.getElementById('box')
+	            box.appendChild(square)
+	                        //document.body.appendChild(square);
+	            square.style.width = "130px";
+	            square.style.height = "130px";
+	            square.style.display = "inline-block";
+	            square.style.margin = "10px";
+	            square.style.backgroundRepeat = "no-repeat";
+	            square.style.backgroundColor = "#563D33"
+	            square.style.backgroundSize = "contain";
+	           
+	            //square.style.id = "square" + x;
+	            square.setAttribute("id", "square" + x)
+	            square.setAttribute("class", "square")
+
+	            var choose = document.createElement('div');
+	            var box = document.getElementById('box2')
+	            box.appendChild(choose)
+	            choose.style.width = "150px";
+	            choose.style.height = "70px"
+	            choose.style.display = "inline-block";
+	            choose.style.margin = "10px";
+	            choose.style.backgroundRepeat = "no-repeat";
+	            choose.style.backgroundColor = "#563D33"
+	            choose.innerText = "click here!" ;
+
+	             choose.addEventListener("click", function(){
+	            var number = Math.round(Math.random()*2);
+	            square.style.backgroundImage = "url("+rps[number]+")"
+	        })
+
+	         }
+	            makeSquare()
+	              makeSquare()
+
+
+
+     //for (var i = 0; i < 1; i=i+1) 
+     //{ makeSquare(i);}
+
+	            //*function makeSquare2 (x) {
+	            //var square2 = document.createElement('div');
+	            //var box1 = document.getElementById('box')
+	           // box.appendChild(square)
+	                        //document.body.appendChild(square);
+	            //square2.style.width = "130px";
+	            //square2.style.height = "130px";
+	            //square2.style.display = "inline-block";
+	            //square2.style.margin = "10px";
+	            //square2.style.backgroundRepeat = "no-repeat";
+	            //square2.style.backgroundColor = "#563D33"
+	            //square2.style.backgroundSize = "contain";
+	           
+	            //square.style.id = "square" + x;
+	     		//square2.setAttribute("id", "square" + x)
+	            //square2.setAttribute("class", "square")
+
+	            //var choose1 = document.createElement('div');
+	            //var box2 = document.getElementById('box2')
+	            //box2.appendChild(choose)
+	            //choose1.style.width = "150px";
+	            //choose1.style.height = "70px"
+	            //choose1.style.display = "inline-block";
+	            //choose1.style.margin = "10px";
+	            //choose1.style.backgroundRepeat = "no-repeat";
+	            //choose1.style.backgroundColor = "#563D33"
+	            //choose1.innerText = "click here!"
+
+	             
+
+	             //choose2 = rps[number]
+	          //  console.log(choice1)
+
+	            //if (choice2 == rps[number]){
+	            	//alert('howdy doody!')
+	            // }
+
+	            //*square.style.backgroundImage = "url("+colors1[angelina]+")"
+	           //  if (square.id == "square0")
+            //             square.style.backgroundColor = colors1[angelina]
+
+            // if (square.id == "square1") 
+            //             square.style.backgroundColor = "pink"
+
+
+            // if (square.id == "square2") 
+            //             square.style.backgroundColor = "orange"
+
+
+            // if (square.id == "square3") 
+            //             square.style.backgroundColor = "magenta"
+
+
+            // if (square.id == "square4") 
+            //             square.style.backgroundColor = "blue"
+
+
+            // if (square.id == "square5") 
+            //             square.style.backgroundColor = "green"
+
+
+            // if (square.id == "square6") 
+            //             square.style.backgroundColor = "yellow"
+
+	            //})
+
+	        
+
+	          
+
+	      
+
+
+		// var seasons = ["summer", "winter", "spring", "fall"]
+		// var arrays = 
+
+
+		// box.addEventListener("click", function(){
+
+
+		// 	var angelina = Math.round(Math.random()*5);
+
+		// 	// box.innerText = seasons[angelina]
+
+		//      // for (var i = 0; i < 6; i=i+1) 
+		//      // { makeSquare(i);}
+		//     var square = document.getElementByClassName('square')
+		//     //var square = document.getElementById('square1')
+		// 	//var square = document.getElementById('square2')
+		// 	//var square = document.getElementById('square3')
+		// 	//var square = document.getElementById('square4')
+		// 	//var square = document.getElementById('square5')
+			
+		// 	for (var i = 0; i < 6; i=i+1) 
+		// 		{square[i].style.backgroundColor="purple"}
+
+		// 	if (square.id == "square0")
+  //                       square.style.backgroundColor = "red"
+
+  //           if (square.id == "square1") 
+  //                       square.style.backgroundColor = "pink"
+
+
+  //           if (square.id == "square2") 
+  //                       square.style.backgroundColor = "orange"
+
+
+  //           if (square.id == "square3") 
+  //                       square.style.backgroundColor = "magenta"
+
+
+  //           if (square.id == "square4") 
+  //                       square.style.backgroundColor = "blue"
+
+
+  //           if (square.id == "square5") 
+  //                       square.style.backgroundColor = "green"
+
+
+  //           if (square.id == "square6") 
+  //                       square.style.backgroundColor = "yellow"
+
+		// })
+
+
+</script>
+</body>
+</html>

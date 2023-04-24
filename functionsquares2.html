@@ -16,15 +16,17 @@
         }
 
         #heading{
-            font-family: 'Reenie Beanie', hand;
-            font-size: 85px;
+        font-family: 'Reenie Beanie', hand;
+        font-size: 85px;
+        color: rgb(86, 61, 51);
+    }
+      #description{
+            font-family: 'Helvetica 55 Roman', sans-serif;  
+            font-size: 29px;
             color: rgb(86, 61, 51);
         }
-        
-        #description{
-            font-family: 'Helvetica 55 Roman', sans-serif;          
-            font-size: 23px;
-            color: rgb(86, 61, 51);
+        body{
+            margin: 10%;
         }
         .textbox{
             position: "inline-block";
@@ -44,9 +46,15 @@
 
 <br><br>
 <center>
-<!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> <p id="heading"> My Square Quilt</p></center>
+<!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> 
 <center>
-<p id="description"> Here is a compliation of photos of my dogs! Click on each photo for a little caption about them :) </p> </center>
+<div id="heading"><b>Square Quilt</div></b>
+
+<br>
+<div id="description">This is a compilation of photos of my dogs. Click each photo to see a description about it.</div></center>
+<br><br><hr>
+
+
 
 
 <script type="text/javascript">
@@ -66,8 +74,8 @@
             text.setAttribute("id", "text")
 
 
-            square.style.width = "400px";
-            square.style.height = "400px";
+            square.style.width = "300px";
+            square.style.height = "300px";
             square.style.display = "inline-block";
             square.style.margin = "10px";
             square.style.backgroundRepeat = "no-repeat";
