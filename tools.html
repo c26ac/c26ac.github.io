@@ -48,10 +48,10 @@
 <center>
 <!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> 
 <center>
-<div id="heading"><b>Square Quilt</div></b>
+<div id="heading"><b>Tools</div></b>
 
 <br>
-<div id="description">This is a compilation of photos of my dogs. Click each photo to see a description about it.</div></center>
+<div id="description">A summary of my cake baking and decorating ESSENTIALS and how I like to use them! :)</div></center>
 <br><br><hr>
 
 
@@ -64,7 +64,7 @@
 //Below is the recipe to make the squares appear on the page//
     
     function makeSquare (x) {
- 			var heart = document.getElementById("heart"); 
+            var heart = document.getElementById("heart"); 
             var square = document.createElement('div');
                         document.body.appendChild(square);
 
@@ -75,65 +75,38 @@
 
 
             square.style.width = "300px";
-            square.style.height = "300px";
+            square.style.height = "250px";
             square.style.display = "inline-block";
-            square.style.margin = "10px";
+            square.style.margin = "50px";
             square.style.backgroundRepeat = "no-repeat";
             square.style.border = "1px";
-            square.style.backgroundColor = "#FFFFFF";
+            square.style.backgroundColor = "beige";
             square.style.backgroundSize = "contain";
-            square.style.backgroundImage = "url('./" + x + ".jpg')" 
+            square.style.backgroundImage = "url('./" + "tool" + x + ".png')" 
             square.id = "square" + x;
             // square.setAttribute("id", "square" + x)
+
 
             square.classList.add('boxes')
             var text1 = document.createElement("div");
             square.appendChild(text1);
             text1.classList.add("textbox")
-            text1.setAttribute("id", "text1")
-
-
-
-
-
-             square.addEventListener ("click", function(){
-                square.style.backgroundImage = "url()";
-                square.style.backgroundColor = "white";
+            text1.id = "text" + x;
+            text1.style.width = "100%"
+            text1.style.left="0px"
+            text1.style.height="100px";
+            text1.style.position = "relative"
+             text1.style.top="250px"
+            text1.style.backgroundColor = "beige"
         
-                
-                if (square.id == "square0") 
-                        text1.innerHTML = "kumo with a bow"
 
-                if (square.id == "square1") 
-                        text.innerHTML = "model kumo"
-
-                if (square.id == "square2") 
-                        text.innerText = "injured kumo"
-
-                if (square.id == "square3") 
-                        text1.innerHTML = "mochi on the go"
-
-                if (square.id == "square4") 
-                        text.innerHTML = "athletic mochi???"
-
-                if (square.id == "square5") 
-                        text.innerText = "winking mochi"
-
-                if (square.id == "square6") 
-                        text1.innerHTML = "kumo and mochi on a walk"
-
-                if (square.id == "square7") 
-                        text.innerHTML = "kumo and mochi with party hats"
-
-                if (square.id == "square8") 
-                        text.innerText = "sleeping kumo and mochi"
+            // text1.setAttribute("id", "text1")
 
 
 
-                
-            })
-
+             
         };
+
 
 
 
@@ -145,6 +118,21 @@
 
     for (var i = 0; i < 9; i++) 
     { makeSquare(i);}
+
+
+text0.innerText = "Ateco 865"
+text1.innerText = "Ateco 867"
+text2.innerText = "Kayaso 10"
+text3.innerText = "Kayaso 33"
+text4.innerText = "Piping Tip 5"
+text5.innerText = "Piping Tip 6"
+text6.innerText = "Piping Tip 7"
+text7.innerText = "Piping Tip 8"
+text8.innerText = "Piping Tip 9"
+
+
+
+
 </script>
 </body>
 </html>

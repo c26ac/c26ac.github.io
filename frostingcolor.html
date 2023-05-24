@@ -48,10 +48,10 @@
 <center>
 <!-- If you'd like a description, feel free to put in your description here! Add your styling above in the curly brackets after "p" above --> 
 <center>
-<div id="heading"><b>Square Quilt</div></b>
+<div id="heading"><b>Colors</div></b>
 
 <br>
-<div id="description">This is a compilation of photos of my dogs. Click each photo to see a description about it.</div></center>
+<div id="description">Some of my go to colors and the dyes I used to make them :)</div></center>
 <br><br><hr>
 
 
@@ -64,7 +64,7 @@
 //Below is the recipe to make the squares appear on the page//
     
     function makeSquare (x) {
- 			var heart = document.getElementById("heart"); 
+            var heart = document.getElementById("heart"); 
             var square = document.createElement('div');
                         document.body.appendChild(square);
 
@@ -80,9 +80,9 @@
             square.style.margin = "10px";
             square.style.backgroundRepeat = "no-repeat";
             square.style.border = "1px";
-            square.style.backgroundColor = "#FFFFFF";
+            square.style.backgroundColor = "white";
             square.style.backgroundSize = "contain";
-            square.style.backgroundImage = "url('./" + x + ".jpg')" 
+            square.style.backgroundImage = "url('./" + x + ".png')" 
             square.id = "square" + x;
             // square.setAttribute("id", "square" + x)
 
@@ -96,43 +96,7 @@
 
 
 
-             square.addEventListener ("click", function(){
-                square.style.backgroundImage = "url()";
-                square.style.backgroundColor = "white";
-        
-                
-                if (square.id == "square0") 
-                        text1.innerHTML = "kumo with a bow"
-
-                if (square.id == "square1") 
-                        text.innerHTML = "model kumo"
-
-                if (square.id == "square2") 
-                        text.innerText = "injured kumo"
-
-                if (square.id == "square3") 
-                        text1.innerHTML = "mochi on the go"
-
-                if (square.id == "square4") 
-                        text.innerHTML = "athletic mochi???"
-
-                if (square.id == "square5") 
-                        text.innerText = "winking mochi"
-
-                if (square.id == "square6") 
-                        text1.innerHTML = "kumo and mochi on a walk"
-
-                if (square.id == "square7") 
-                        text.innerHTML = "kumo and mochi with party hats"
-
-                if (square.id == "square8") 
-                        text.innerText = "sleeping kumo and mochi"
-
-
-
-                
-            })
-
+             
         };
 
 
