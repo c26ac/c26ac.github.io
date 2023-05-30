@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head> 
+		<link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500;1,800&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style type="text/css">
+			p{
+				font-size:20px;
+			}
+
+			#heading{
+				position: relative; 
+				top: 100px; 
+				font-color:rgb(86, 61, 51);
+				font-family: 'Fraunces', serif;
+				font-size: 75px;
+			}
+			#description{
+				position: relative; 
+				top: 160px; 
+				font-color:rgb(86, 61, 51);
+				font-family: 'Helvetica 55 Roman', sans-serif;  
+				font-size: 30px;
+			}
+			#cakephoto1{
+				width:300px;
+				height:300px;
+				background-image: url(heartcake.png);
+				position: contain;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="beige">
+					<div id="heading">My Coding Story</div>
+					<div id="description">by Angelina Chu</div></section>
+
+
+				<section data-background-color="beige"><p style="font-family: 'Fraunces', serif; font-size:37px">Why I made this website:</p><p style="font-family: 'Helvetica 55 Roman', sans-serif; font-size:30px; font-type:'Fraunces', serif;">
+
+					As you may know from my previous projects, I LOVE to bake. <br><br> However, I often have found that I really only present the final products of baking...</p><img src="cake4a.png" style="width:400px; height:300px;"></section>
+
+
+				<section data-background-color="beige"><p style="font-family: 'Fraunces', serif; font-size:37px">Why I made this website:</p><p style="font-family: 'Helvetica 55 Roman', sans-serif; font-size: 30px">Baking can become pretty unorganized and chaotic sometimes. I wanted to make a website about my baking process not only as a  tool to keep myself more organized while baking, but also as a way to share how I like to bake.</p>
+
+					
+
+
+				</section>
+
+
+
+				<section data-background-color="beige" data-background-size="contain"><p style="font-family: 'Fraunces', serif; font-size:60px">
+
+					 4 different categories:</p></section>
+
+
+
+				<section data-background-color="beige" ><p>
+					<div id="heading">1. Recipes 📝</div>
+					<div id="description">- Keep track of recipes<br>- Share recipes with others <br><br></div><div id="description">
+						<b>Method:</b> I made this by simply putting in the names of each recipe and linking each name to their respective recipe pages.</div>
+					</section>
+
+				<section data-background-color="beige" ><p>
+					<div id="heading">2. Piping Tips </div>
+					<div id="description"><br>- Keep track of favorite/most used piping tips<br>- See how each piping tip performs/pipes <</div>
+					</section>
+
+				<section data-background-color="beige" ><p>
+					<div id="heading">3. Tools 🥄</div>
+					<div id="description">- Once again, take inventory of the tools I use<br>- Probably the most effective look into the baking process if someone were browsing the website </div>
+					</section>
+
+				<section data-background-color="beige" ><p>
+					<div id="heading">4. Gallery 🖼️</div><br>
+					<div id="description">- A way to look back on my past work! </div>
+					</section>
+				
+				
+				<section data-background-color="beige"> <p style="font-family: 'Fraunces', serif; font-size:37px">Method (for the last three sections):</p><p style="font-family: 'Helvetica 55 Roman', sans-serif; font-size: 30px"> For these last three sections, I utilized similar formats that built on the Square Quilt project. <br><br>In javascript, I created arrays of each of the photos along with arrays of textboxes that would lay right underneath each photo. I named each of my photos with a different number to correspond to their IDs / where they would be within the array.</p>
+				</section>
+
+				<section data-background-color="beige" ><p>
+					<div id="heading">5. About Me 👩🏻‍🍳</div><br>
+					<div id="description">- Get a better understanding of where my love of baking comes from and my experience with it<br><br><b>Method:</b> I made this using a simple textbox, but I thought it would important to include.</div>
+					</section>
+
+
+				<section data-background-color="beige" ><p style="font-size:40px; font-family:'Fraunces', serif"><b>Here is my <a href="../bakingwebsitefinal.html">completed website!</b></p></a></section>
+
+			</div>
+		</div>
+x
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
